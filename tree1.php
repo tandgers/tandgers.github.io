@@ -1,6 +1,7 @@
 <?php
 	echo"当前页面生成时间：";
 	echo date("Y-m-d H:i:s",time()).'<br />';
+	
 ?>
 
 <?php
@@ -24,17 +25,24 @@ function get_dir_to_html($path){
 	$dirs='';
 	$files='';
 	$t='';
-	foreach($r as $v){
-		if($v=='.' || $v=='..'){continue;}
+	foreach($r as $v)
+	{
+		if($v=='.' || $v=='..' ){continue;}
+
 		
 		$v=iconv('',"".'//IGNORE',$v);
-		if(is_dir($path.$v)){
+
+		if(is_dir($path.$v))
+		{
+			
 			$t.="\t";
 			$dirs.=$t.'<li class=dir id="'.trim($path.$v,'./').'"><div class=line><div>'.$v."</div><div></div></div>\r\n".$t.get_dir_to_html($path.$v.'/')."</li>\r\n";	
-		}else{
+		}else
+		{
 			$temp=explode('.',$v);
 			$files.=$t.'<li class='.$temp[count($temp)-1].' id="'.trim($path.$v,'./').'"><div class=line><div>'.$v."</div><div></div></div></li>\r\n";;	
 		}
+
 	}
 	if($dirs!='' || $files!=''){$html="<ul>".$dirs.$files."</ul>\r\n";}
 	return $html;
@@ -46,4 +54,4 @@ function get_dir_to_html($path){
 
 
 
-© 东哥制作 2020- <?php echo date("Y")?>
+Copyright ©  2020- <?php echo date("Y")?> 东哥制作
