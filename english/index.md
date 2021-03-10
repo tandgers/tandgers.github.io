@@ -45,6 +45,8 @@ ballot |F
 conference |T
 attendee |T
 
+------
+
 ## Words 3.4
 
 单词|记忆次数
@@ -61,3 +63,24 @@ subtle |
 doze off |
 ill-treated |
 unintentional |
+
+
+
+## Words 3.11
+
+| 单词             | 记忆次数 |
+| :--------------- | -------- |
+| biting her nails |          |
+| manicurist       |          |
+| filing           |          |
+| downscale        |          |
+| middle-brow      |          |
+| suburban         |          |
+| dealership       |          |
+| lag              |          |
+| retailer         |          |
+| mildly           |          |
+| belt-tightening  |          |
+| dreadful         |          |
+| headline         |          |
+| predominantly    |          |
