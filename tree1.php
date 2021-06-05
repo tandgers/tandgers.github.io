@@ -16,7 +16,18 @@
 header('Content-Type:text/html;charset=utf-8');
 $path='./';
 $v=get_dir_to_html($path);
-file_put_contents('dir.html',$v);
+
+
+$time="当前页面生成时间：";
+$time1=date("Y-m-d H:i:s",time()).'<br />';
+$time2="<br /> 以下为目录索引：";
+
+file_put_contents('dir.html', $time);
+file_put_contents('dir.html', $time1,FILE_APPEND | LOCK_EX);
+file_put_contents('dir.html', $time2,FILE_APPEND | LOCK_EX);
+file_put_contents('dir.html', $v,FILE_APPEND | LOCK_EX);
+
+
 echo $v;
 
 function get_dir_to_html($path){
