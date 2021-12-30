@@ -6,7 +6,7 @@
 <link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
 .mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -134,19 +134,9 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
 a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; zoom: 90%; }
-#math-inline-preview-content { zoom: 1.1; }
-.MathJax_SVG * { transition: none 0s ease 0s; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
@@ -165,9 +155,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .md-diagram-panel .messageText { stroke: none !important; }
 .md-diagram-panel .start-state { fill: var(--node-fill); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
 .md-fences.md-fences-math { font-size: 1em; }
-.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
 .md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
 .md-fences-advanced:not(.md-focus) { background: inherit; }
 .typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
@@ -210,6 +198,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
 
 
 :root {
@@ -660,7 +649,7 @@ header, .context-menu, .megamenu-content, footer{
 </style><title>世外高人好的整理</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='世外高人好的整理'><span>世外高人好的整理</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#世外高人好的整理">世外高人好的整理</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n4"><a class="md-toc-inner" href="#p-aligncenterwelcomep">Welcome</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n11"><a class="md-toc-inner" href="#一些常用的网页">一些常用的网页</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n19"><a class="md-toc-inner" href="#文章分类">文章分类</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n37"><a class="md-toc-inner" href="#网站功能需支持php">网站功能(需支持php)</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n46"><a class="md-toc-inner" href="#收藏夹总览">收藏夹总览</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n52"><a class="md-toc-inner" href="#测试区">测试区</a></span></p></div><hr /><h2 id='p-aligncenterwelcomep'><p align="center"><span>Welcome</span></p></h2><ul><li><span>发布日期 </span><a href='http://127.0.0.1/2020/10/10/welcome/'><span>2020年10月10日</span></a></li></ul><p><img src="https://gitee.com/tandgers/BlogImageBed/raw/master/img/j1.jpg" referrerpolicy="no-referrer" alt="dfsdf" title="dfgdfgdfg"></p><div id="animation1"><center>欢迎来到美丽广州</center></div><hr /><h2 id='一些常用的网页'><span>一些常用的网页</span></h2><ol start='' ><li><a href='https://www.butnono.com/good-vpn-v2ray-ssr.html'><span>不过了了</span></a></li><li><a href='https://my.ishadowx.biz/'><span>iShadow</span></a></li></ol><p>&nbsp;</p><hr /><h2 id='文章分类'><span>文章分类</span></h2><ol start='' ><li><p><span>考研学习</span></p><ol start='' ><li><a href='./english/index.html'><font color=#0099ff><span>英语</span></font></a></li><li><span>政治</span></li><li><span>数学</span></li><li><span>专业课</span></li></ol></li><li><p><a href='./dailyarticles/index.html'><span>日常文章</span></a></p></li><li><p><a href='./study/index.html'><span>研究</span></a></p></li></ol><p><button onclick="javascrtpt:window.location.href='./dailyarticles/BuildDirectory.php'"><span>更新日常文章根目录</span></button></p><hr /><h2 id='网站功能需支持php'><span>网站功能(需支持php)</span></h2><ol start='' ><li><a href='./test'><span>文件上传（.png&lt;20MB）</span></a></li><li><a href='./u1/u1.php'><span>远程传输</span></a></li><li><a href='./dir.html'><span>目录索引</span></a></li><li><a href='./website_dir.html'><span>文件总览</span></a></li></ol><hr /><h2 id='收藏夹总览'><span>收藏夹总览</span></h2><ul><li><a href='./bookmark/dir.html'><span>favorites</span></a></li></ul><p><button onclick="javascrtpt:window.location.href='./BuildDirectory.php'"><span>更新网站根目录</span></button></p><hr /><h2 id='测试区'><span>测试区</span></h2><p>&nbsp;</p><div class="demo2-bg">
+<div id='write'  class=''><h1 id='世外高人好的整理另一个网站httpstandgersgiteeio）'><span>世外高人好的整理（</span><a href='https://tandgers.gitee.io/'><span>另一个网站</span></a><span>）</span></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#世外高人好的整理另一个网站httpstandgersgiteeio）">世外高人好的整理（另一个网站）</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n4"><a class="md-toc-inner" href="#p-aligncenterwelcomep">Welcome</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n11"><a class="md-toc-inner" href="#一些常用的网页">一些常用的网页</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n19"><a class="md-toc-inner" href="#文章分类">文章分类</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n38"><a class="md-toc-inner" href="#网站功能需支持php">网站功能(需支持php)</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n49"><a class="md-toc-inner" href="#收藏夹总览">收藏夹总览</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n55"><a class="md-toc-inner" href="#测试区">测试区</a></span></p></div><hr /><h2 id='p-aligncenterwelcomep'><p align="center"><span>Welcome</span></p></h2><ul><li><span>发布日期 </span><a href='http://127.0.0.1/2020/10/10/welcome/'><span>2020年10月10日</span></a></li></ul><p><img src="https://gitee.com/tandgers/BlogImageBed/raw/master/img/j1.jpg" referrerpolicy="no-referrer" alt="dfsdf" title="dfgdfgdfg"></p><div id="animation1"><center>欢迎来到美丽广州</center></div><hr /><h2 id='一些常用的网页'><span>一些常用的网页</span></h2><ol start='' ><li><a href='https://www.butnono.com/good-vpn-v2ray-ssr.html'><span>不过了了</span></a></li><li><a href='https://my.ishadowx.biz/'><span>iShadow</span></a></li></ol><p>&nbsp;</p><hr /><h2 id='文章分类'><span>文章分类</span></h2><ol start='' ><li><span>未知</span></li><li><a href='./dailyarticles/index.html'><span>日常文章</span></a></li><li><a href='./study/index.html'><span>研究</span></a></li></ol><p><button onclick="javascrtpt:window.location.href='./dailyarticles/BuildDirectory.php'"><span>更新日常文章根目录</span></button></p><hr /><h2 id='网站功能需支持php'><span>网站功能(需支持php)</span></h2><ol start='' ><li><a href='./test'><span>文件上传（.png&lt;20MB）</span></a></li><li><a href='./u1/u1.php'><span>远程传输</span></a></li><li><a href='./dir.html'><span>目录索引</span></a></li><li><a href='./website_dir.html'><span>文件总览</span></a></li></ol><hr /><h2 id='收藏夹总览'><span>收藏夹总览</span></h2><ul><li><a href='./bookmark/dir.html'><span>favorites</span></a></li></ul><p><button onclick="javascrtpt:window.location.href='./BuildDirectory.php'"><span>更新网站根目录</span></button></p><hr /><h2 id='测试区'><span>测试区</span></h2><p>&nbsp;</p><div class="demo2-bg">
     <div class="demo2">背景图半透明，文字不透明<br>
     </div>
 </div><p>&nbsp;</p><p><button onclick="javascrtpt:window.location.href='./BuildDirectory.php';javascrtpt:window.location.href='./dailyarticles/BuildDirectory.php'"><span>更新全部网页</span></button></p><hr /><p><span>Copyright © 2020-</span><aoi id="year"><span>年份</span></aoi><span> </span><a href='http://tandgers.top/'><span>东哥制作</span></a></p><p><a href='#东哥日常的整理'><p align="right"><span>至顶部 ↑</span></p></a></p><p><button onclick="javascrtpt:window.location.href='./tree1.php'"><span>更新目录</span></button></p><script src="../updatetime.js"></script><p id="ymd">显示页面打开时间</p>
