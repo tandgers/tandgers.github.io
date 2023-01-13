@@ -65,7 +65,7 @@
 
 Copyright © 2020-<aoi id="year">年份</aoi> [东哥制作](https://tandgers.github.io/)
 
-[<p align="right">至顶部 ↑</p>](#东哥日常的整理)
+[<p align="right">至顶部 ↑</p>](#世外高人好的整理)
 
 <button onclick="javascrtpt:window.location.href='./tree1.php'">更新目录</button>
 
