@@ -1,4 +1,4 @@
-# 世外高人好的整理（[另一个网站](https://tandgers.gitee.io/)）
+# 世外高人好的整理
 
 [TOC]
 
@@ -9,7 +9,7 @@
 * 发布日期 [2020年10月10日](http://127.0.0.1/2020/10/10/welcome/)
 
 
-![dfsdf](https://gitee.com/tandgers/BlogImageBed/raw/master/img/j1.jpg "dfgdfgdfg")
+
 
 <div id="animation1"><center>欢迎来到美丽广州</center></div>
 
@@ -40,6 +40,7 @@
 2. [远程传输](./u1/u1.php)
 3. [目录索引](./dir.html)
 4. [文件总览](./website_dir.html)
+5. [RPG Maker MV存档修改器](/function/1.html)
 
 ***
 
@@ -51,22 +52,18 @@
 
 ------
 
-## 测试区
+## 关于
 
-
-
-<div class="demo2-bg">
-    <div class="demo2">背景图半透明，文字不透明<br />
-    </div>
-</div>
-
+1. [gitee的小站](https://tandgers.gitee.io)
+2. [Onedrive网盘](https://pan.tandgers.asia)
+3. [功能(暂定)]()
 
 <button onclick="javascrtpt:window.location.href='./BuildDirectory.php';javascrtpt:window.location.href='./dailyarticles/BuildDirectory.php'">更新全部网页</button>
 
 
 ------
 
-Copyright © 2020-<aoi id="year">年份</aoi> [东哥制作](http://tandgers.top/)
+Copyright © 2020-<aoi id="year">年份</aoi> [东哥制作](https://tandgers.github.io/)
 
 [<p align="right">至顶部 ↑</p>](#东哥日常的整理)
 
